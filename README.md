@@ -2,18 +2,35 @@
 Patterns are reusable solutions to common design problems, resulting in a smoother, more efficient development process. They serve as blueprints for building better software structures. 
  ## These are some of the most popular patterns:
 1. [Abstract Factory: Family Creator - Makes groups of related items.](#abstractFactory)
-2. [Functional Interfaces](#functionalInterfaces)
-3. [Explanation of code](#explanation)
+2. [Builder: Lego Master - Builds objects step by step, keeping creation and appearance](#builder)
+3. [Prototype: Clone Maker - Creates copies of fully prepared examples.](#prototype)
+4. [Singleton: One and Only - A special class with just one instance.](#singleton)
+5. [](#)
+6. [](#)
+7. [](#)
+8. [](#)
+9. [](#)
+10. [](#)
+11. [](#)
+12. [](#)
+13. [](#)
+14. [](#)
+15. [](#)
+16. [](#)
+17. [](#)
+18. [](#)
 
 ### abstractFactory
 ***
 
+### builder
+***
 
-Builder: Lego Master - Builds objects step by step, keeping creation and appearance
+### prototype
+***
 
-Prototype: Clone Maker - Creates copies of fully prepared examples.
 
-Singleton: One and Only - A special class with just one instance.
+
 
 Adapter: Universal Plug - Connects things with different interfaces.
 
