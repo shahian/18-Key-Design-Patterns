@@ -1,7 +1,13 @@
 # 18-Key-Design-Patterns
-Patterns are reusable solutions to common design problems, resulting in a smoother, more efficient development process. They serve as blueprints for building better software structures. These are some of the most popular patterns:
+Patterns are reusable solutions to common design problems, resulting in a smoother, more efficient development process. They serve as blueprints for building better software structures. 
+ ## These are some of the most popular patterns:
+1. [Abstract Factory: Family Creator - Makes groups of related items.](#abstractFactory)
+2. [Functional Interfaces](#functionalInterfaces)
+3. [Explanation of code](#explanation)
 
-Abstract Factory: Family Creator - Makes groups of related items.
+### abstractFactory
+***
+
 
 Builder: Lego Master - Builds objects step by step, keeping creation and appearance
 
