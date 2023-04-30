@@ -95,6 +95,75 @@ SUV suv = factory.createSUV();
 System.out.println(sedan.getName() + " with " + sedan.getNumDoors() + " doors"); // Output: "Family Sedan with 4 doors"
 System.out.println(suv.getName() + " with " + suv.getNumDoors() + " doors"); // Output: "Family SUV with 5 doors"
 ```
+## Factory Method
+Factory Method is also a creational design pattern, but it differs from the Abstract Factory pattern in that it provides an interface for creating a single object, rather than families of related objects.
+
+In the Factory Method pattern, you define an interface or abstract class for creating objects, and concrete implementations of this interface provide actual implementations for creating specific objects. The main difference is that each concrete implementation of the Factory Method interface creates a different object.
+
+This pattern is useful when you need to create objects based on certain conditions or parameters, but want to delegate the actual creation to a separate class. It also allows for easy extension and modification of the object creation process, since each implementation can provide its own logic for creating objects.
+
+One example of the Factory Method pattern might be a Document class, which defines an abstract method for creating a DocumentReader object. Each subclass of Document can provide its own implementation for creating a DocumentReader object, based on the type of document being read. This allows for easy extension and modification of the DocumentReader creation process, without affecting the rest of the code.
+
+In summary, the Factory Method pattern provides an interface or abstract class for creating a single object, and concrete implementations of this interface provide actual implementations for creating specific objects. It is useful when you need to create objects based on certain conditions or parameters, and allows for easy extension and modification of the object creation process.
+```
+// Define the interface for creating cars
+interface CarFactory {
+    public Car createCar();
+}
+
+// Concrete factory for creating sedan cars
+class SedanFactory implements CarFactory {
+    public Car createCar() {
+        return new Sedan();
+    }
+}
+
+// Concrete factory for creating SUV cars
+class SUVFactory implements CarFactory {
+    public Car createCar() {
+        return new SUV();
+    }
+}
+
+// Abstract class for the car
+abstract class Car {
+    public abstract String getName();
+    public abstract int getNumDoors();
+}
+
+// Concrete class for the sedan
+class Sedan extends Car {
+    public String getName() {
+        return "Sedan";
+    }
+    public int getNumDoors() {
+        return 4;
+    }
+}
+
+// Concrete class for the SUV
+class SUV extends Car {
+    public String getName() {
+        return "SUV";
+    }
+    public int getNumDoors() {
+        return 5;
+    }
+}
+```
+In this example, we have defined an interface CarFactory for creating cars, and two concrete factories SedanFactory and SUVFactory that create different types of cars. We have also defined an abstract class Car and concrete classes Sedan and SUV that extend Car.
+
+To use the Factory Method pattern to create different types of cars, you can create an instance of the appropriate CarFactory and use it to create a new car:
+```
+CarFactory sedanFactory = new SedanFactory();
+CarFactory suvFactory = new SUVFactory();
+
+Car sedan = sedanFactory.createCar();
+Car suv = suvFactory.createCar();
+
+System.out.println(sedan.getName() + " with " + sedan.getNumDoors() + " doors"); // Output: "Sedan with 4 doors"
+System.out.println(suv.getName() + " with " + suv.getNumDoors() + " doors"); // Output: "SUV with 5 doors"
+```
 ***
 
 ### builder
