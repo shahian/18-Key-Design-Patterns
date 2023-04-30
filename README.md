@@ -28,6 +28,10 @@ The main idea behind the Abstract Factory pattern is to define an abstract class
 This pattern is useful in situations where you need to create families of related objects, but want to be able to swap out one family for another without affecting the rest of the code. It also allows you to encapsulate the creation of objects, making it easier to change or extend the way objects are created in the future.
 
 In summary, the Abstract Factory pattern provides an interface for creating families of related objects, without committing to specific implementations. It promotes loose coupling and encapsulation, and makes it easier to change or extend the way objects are created in your code.
+To disable or comment some lines in a README file on GitHub, you can use HTML comments. Here's an example of how to do it:
+
+ 
+<!--
 ```
 // Define the interface for creating cars
 interface CarFactory {
@@ -95,6 +99,7 @@ SUV suv = factory.createSUV();
 System.out.println(sedan.getName() + " with " + sedan.getNumDoors() + " doors"); // Output: "Family Sedan with 4 doors"
 System.out.println(suv.getName() + " with " + suv.getNumDoors() + " doors"); // Output: "Family SUV with 5 doors"
 ```
+ -->
 ## Factory Method
 Factory Method is also a creational design pattern, but it differs from the Abstract Factory pattern in that it provides an interface for creating a single object, rather than families of related objects.
 
@@ -105,6 +110,7 @@ This pattern is useful when you need to create objects based on certain conditio
 One example of the Factory Method pattern might be a Document class, which defines an abstract method for creating a DocumentReader object. Each subclass of Document can provide its own implementation for creating a DocumentReader object, based on the type of document being read. This allows for easy extension and modification of the DocumentReader creation process, without affecting the rest of the code.
 
 In summary, the Factory Method pattern provides an interface or abstract class for creating a single object, and concrete implementations of this interface provide actual implementations for creating specific objects. It is useful when you need to create objects based on certain conditions or parameters, and allows for easy extension and modification of the object creation process.
+<!--
 ```
 // Define the interface for creating cars
 interface CarFactory {
@@ -151,6 +157,7 @@ class SUV extends Car {
     }
 }
 ```
+
 In this example, we have defined an interface CarFactory for creating cars, and two concrete factories SedanFactory and SUVFactory that create different types of cars. We have also defined an abstract class Car and concrete classes Sedan and SUV that extend Car.
 
 To use the Factory Method pattern to create different types of cars, you can create an instance of the appropriate CarFactory and use it to create a new car:
@@ -164,6 +171,7 @@ Car suv = suvFactory.createCar();
 System.out.println(sedan.getName() + " with " + sedan.getNumDoors() + " doors"); // Output: "Sedan with 4 doors"
 System.out.println(suv.getName() + " with " + suv.getNumDoors() + " doors"); // Output: "SUV with 5 doors"
 ```
+-->
 ***
 
 ### builder
