@@ -28,7 +28,10 @@ The main idea behind the Abstract Factory pattern is to define an abstract class
 This pattern is useful in situations where you need to create families of related objects, but want to be able to swap out one family for another without affecting the rest of the code. It also allows you to encapsulate the creation of objects, making it easier to change or extend the way objects are created in the future.
 
 In summary, the Abstract Factory pattern provides an interface for creating families of related objects, without committing to specific implementations. It promotes loose coupling and encapsulation, and makes it easier to change or extend the way objects are created in your code.
-*/
+To disable or comment some lines in a README file on GitHub, you can use HTML comments. Here's an example of how to do it:
+
+ 
+<!--
 ```
 // Define the interface for creating cars
 interface CarFactory {
@@ -96,7 +99,7 @@ SUV suv = factory.createSUV();
 System.out.println(sedan.getName() + " with " + sedan.getNumDoors() + " doors"); // Output: "Family Sedan with 4 doors"
 System.out.println(suv.getName() + " with " + suv.getNumDoors() + " doors"); // Output: "Family SUV with 5 doors"
 ```
-/*
+ -->
 ## Factory Method
 Factory Method is also a creational design pattern, but it differs from the Abstract Factory pattern in that it provides an interface for creating a single object, rather than families of related objects.
 
