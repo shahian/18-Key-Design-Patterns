@@ -21,6 +21,80 @@ Patterns are reusable solutions to common design problems, resulting in a smooth
 18. [Visitor: Skillful Guest - Adds new operations to a class without altering it](#visitor)
 
 ### abstractFactory
+Abstract Factory is a creational design pattern that provides an interface for creating families of related objects without specifying their concrete classes. In other words, it allows you to create objects that are related to each other in some way, but without committing to specific classes that implement them.
+
+The main idea behind the Abstract Factory pattern is to define an abstract class or interface that represents the "factory" for creating related objects. Concrete implementations of this factory interface provide actual implementations for creating specific objects, and ensure that all the objects they create are related in some way.
+
+This pattern is useful in situations where you need to create families of related objects, but want to be able to swap out one family for another without affecting the rest of the code. It also allows you to encapsulate the creation of objects, making it easier to change or extend the way objects are created in the future.
+
+In summary, the Abstract Factory pattern provides an interface for creating families of related objects, without committing to specific implementations. It promotes loose coupling and encapsulation, and makes it easier to change or extend the way objects are created in your code.
+``
+// Define the interface for creating cars
+interface CarFactory {
+    public Sedan createSedan();
+    public SUV createSUV();
+}
+
+// Concrete factory for creating a family of related cars
+class FamilyCarFactory implements CarFactory {
+    public Sedan createSedan() {
+        return new FamilySedan();
+    }
+    public SUV createSUV() {
+        return new FamilySUV();
+    }
+}
+
+// Abstract class for the car
+abstract class Car {
+    public abstract String getName();
+    public abstract int getNumDoors();
+}
+
+// Concrete class for the sedan
+class Sedan extends Car {
+    public String getName() {
+        return "Sedan";
+    }
+    public int getNumDoors() {
+        return 4;
+    }
+}
+
+// Concrete class for the SUV
+class SUV extends Car {
+    public String getName() {
+        return "SUV";
+    }
+    public int getNumDoors() {
+        return 5;
+    }
+}
+
+// Concrete class for the family of sedan cars
+class FamilySedan extends Sedan {
+    public String getName() {
+        return "Family Sedan";
+    }
+}
+
+// Concrete class for the family of SUV cars
+class FamilySUV extends SUV {
+    public String getName() {
+        return "Family SUV";
+    }
+}
+``
+
+To use the Abstract Factory pattern to create a family of related car objects, you can create an instance of the FamilyCarFactory and use it to create new cars:
+``
+CarFactory factory = new FamilyCarFactory();
+Sedan sedan = factory.createSedan();
+SUV suv = factory.createSUV();
+
+System.out.println(sedan.getName() + " with " + sedan.getNumDoors() + " doors"); // Output: "Family Sedan with 4 doors"
+System.out.println(suv.getName() + " with " + suv.getNumDoors() + " doors"); // Output: "Family SUV with 5 doors"
+``
 ***
 
 ### builder
