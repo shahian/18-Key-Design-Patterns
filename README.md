@@ -157,7 +157,7 @@ class SUV extends Car {
     }
 }
 ```
--->
+
 In this example, we have defined an interface CarFactory for creating cars, and two concrete factories SedanFactory and SUVFactory that create different types of cars. We have also defined an abstract class Car and concrete classes Sedan and SUV that extend Car.
 
 To use the Factory Method pattern to create different types of cars, you can create an instance of the appropriate CarFactory and use it to create a new car:
@@ -171,6 +171,7 @@ Car suv = suvFactory.createCar();
 System.out.println(sedan.getName() + " with " + sedan.getNumDoors() + " doors"); // Output: "Sedan with 4 doors"
 System.out.println(suv.getName() + " with " + suv.getNumDoors() + " doors"); // Output: "SUV with 5 doors"
 ```
+-->
 ***
 
 ### builder
