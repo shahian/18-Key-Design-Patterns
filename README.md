@@ -173,8 +173,16 @@ System.out.println(suv.getName() + " with " + suv.getNumDoors() + " doors"); // 
 ```
 -->
 ***
-
 ### builder
+The Builder pattern is a way of creating complex objects step by step, while keeping track of their creation and appearance. It allows you to separate the construction of an object from its representation, so that you can create different representations of the same object using the same construction process.
+
+To use the Builder pattern, you define an interface or abstract class that represents the steps for building a complex object. Then, you create concrete implementations of this interface that provide the actual implementation for building specific objects.
+
+Each concrete implementation of the builder interface defines a series of steps that must be taken to create the desired object. These steps can be added or removed as needed, so that you can easily modify the construction process without affecting the rest of the code.
+
+Once the object has been fully constructed, the builder returns it to the client as a fully functional object that can be used as needed.
+
+In summary, the Builder pattern is a way of creating complex objects step by step, while keeping track of their creation and appearance. It separates the construction of an object from its representation, allowing you to create different representations of the same object using the same construction process.
 ***
 
 ### prototype
