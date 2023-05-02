@@ -69,6 +69,8 @@ In summary, the Builder pattern allows you to create different types of cars usi
 ***
 
 ### prototype
+Prototype pattern is a creational design pattern that allows creating copies of existing objects, without exposing their underlying implementation. It involves creating a prototype object, which can be cloned to create new instances of the same object.
+
 ***
 ### singleton
 ***
