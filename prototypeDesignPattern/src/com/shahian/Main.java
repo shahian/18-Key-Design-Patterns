@@ -11,7 +11,15 @@ public class Main {
         sportsCar2.setColor("Blue");
         sportsCar2.addSpoiler();
         sportsCar2.addRacingStripes();
+        SportsCar sportsCar3 = (SportsCar) new CarPrototype().getCar("sportsCar");
+        sportsCar3.setModel("2002");
+        sportsCar3.setMake("BMW");
+        sportsCar3.setColor("yellow");
+
+        sportsCar3.addSpoiler();
+        sportsCar3.addRacingStripes();
         System.out.println(sportsCar1);
         System.out.println(sportsCar2);
+        System.out.println(sportsCar3);
     }
 }
