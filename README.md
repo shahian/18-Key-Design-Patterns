@@ -90,7 +90,11 @@ Singleton is a design pattern in object-oriented programming that ensures that o
 
 The Singleton pattern is often used in situations where a single instance of a class needs to coordinate actions across an entire system. For example, a logging system that needs to record events from multiple parts of a program would benefit from having a single, globally accessible instance that could coordinate those events. Another example might be a database connection pool that needs to manage connections across multiple threads.
 
+To implement the Singleton pattern, the class in question must have a private constructor to prevent external instantiation, and a static method that returns the single instance of the class. This method is responsible for creating the instance if it doesn't already exist, and returning it if it does.
 
+One important consideration when implementing the Singleton pattern is thread safety. If multiple threads attempt to access the Singleton instance at the same time, it is possible to create multiple instances. To prevent this, synchronization mechanisms such as locks or double-checked locking can be used.
+
+While the Singleton pattern can be useful in certain situations, it can also be overused, leading to tightly coupled code and decreased flexibility. Therefore, it's important to carefully consider whether the Singleton pattern is the best solution for a particular problem before implementing it.
 ***
 
 ### adapter
