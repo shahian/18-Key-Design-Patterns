@@ -86,6 +86,9 @@ Some common use cases for the Prototype pattern include:
 
 ***
 ### singleton
+Singleton is a design pattern in object-oriented programming that ensures that only one instance of a class is created and made available to the entire system. It guarantees that the class has only one instance, and provides a global point of access to that instance.
+
+
 ***
 
 ### adapter
