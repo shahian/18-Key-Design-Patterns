@@ -88,6 +88,8 @@ Some common use cases for the Prototype pattern include:
 ### singleton
 Singleton is a design pattern in object-oriented programming that ensures that only one instance of a class is created and made available to the entire system. It guarantees that the class has only one instance, and provides a global point of access to that instance.
 
+The Singleton pattern is often used in situations where a single instance of a class needs to coordinate actions across an entire system. For example, a logging system that needs to record events from multiple parts of a program would benefit from having a single, globally accessible instance that could coordinate those events. Another example might be a database connection pool that needs to manage connections across multiple threads.
+
 
 ***
 
