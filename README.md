@@ -98,6 +98,11 @@ While the Singleton pattern can be useful in certain situations, it can also be 
 ***
 
 ### adapter
+The Adapter pattern is a structural design pattern that allows objects with incompatible interfaces to work together. It acts as a bridge between two interfaces, converting the interface of one object into another interface that clients expect. It can be compared to a universal plug that connects devices with different plugs into a power outlet.
+
+The Adapter pattern is useful when you have existing classes or components with different interfaces that need to collaborate without modifying their existing code. Instead, you create an adapter class that implements the target interface expected by the client and internally delegates the requests to the adapted object with the incompatible interface.
+
+By using the Adapter pattern, you can achieve seamless integration between incompatible interfaces and enable collaboration between different components or systems. It promotes code reusability and ensures that existing code remains unaffected while enabling interoperability between different parts of a system.
 ***
 
 ### bridge
