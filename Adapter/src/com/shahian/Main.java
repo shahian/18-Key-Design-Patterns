@@ -15,6 +15,7 @@ public class Main {
         tesla.electricAccelerate();
         tesla.electricBrake();
 
+
         // Adapt the electric car to work with the Car interface
         Car electricCarAdapter = new ElectricCarAdapter(tesla);
         electricCarAdapter.accelerate();
