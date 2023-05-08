@@ -106,6 +106,9 @@ By using the Adapter pattern, you can achieve seamless integration between incom
 ***
 
 ### bridge
+Bridge is a design pattern that allows you to decouple an abstraction from its implementation so that the two can vary independently. It is often used when you want to connect two related objects, but don't want to hardcode them together. The Bridge pattern defines an abstraction, and then provides an interface for the implementation of the abstraction. This allows for a greater degree of flexibility in how the abstraction is implemented, without affecting the clients that use the abstraction.
+
+
 ***
 
 ### composite
