@@ -116,6 +116,8 @@ Composite is a design pattern that allows you to compose objects into tree-like 
 
 The Component represents the interface for all objects in the composition, whether they are simple or complex. It defines common operations that can be performed on both individual objects and compositions of objects.
 
+The Composite represents a complex object that can contain other components, forming a tree-like structure. It implements the operations defined in the Component interface by delegating them to its child components. This allows clients to interact with the Composite object in the same way as they would with an individual object.
+
 
 ***
 
