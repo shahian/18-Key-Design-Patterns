@@ -114,6 +114,8 @@ In simple terms, you can think of the Bridge pattern as a function connector. It
 ### composite
 Composite is a design pattern that allows you to compose objects into tree-like structures to represent part-whole hierarchies. It enables clients to treat individual objects and compositions of objects uniformly. The Composite pattern consists of two key components: the Component and the Composite.
 
+The Component represents the interface for all objects in the composition, whether they are simple or complex. It defines common operations that can be performed on both individual objects and compositions of objects.
+
 
 ***
 
