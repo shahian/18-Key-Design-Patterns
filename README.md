@@ -135,6 +135,9 @@ In the context of the Decorator pattern, the analogy of a "Customizer" is fittin
 
 The key idea behind the Decorator pattern is to create a set of decorator classes that wrap the original object and provide additional functionality. Each decorator implements the same interface as the original object, allowing them to be used interchangeably. Decorators can add new behavior before or after the execution of the original object's methods, effectively extending its functionality.
 
+By using the Decorator pattern, you can achieve a more flexible and modular design, as you can mix and match decorators to add specific features to objects as needed. This avoids the need for creating numerous subclasses to handle different combinations of features.
+
+
 ***
 
 ### facade
