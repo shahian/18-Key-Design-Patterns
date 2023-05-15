@@ -128,6 +128,11 @@ By using the Composite pattern, you can easily add, remove, or traverse componen
 ***
 
 ### decorator
+
+Decorator pattern, also known as the Wrapper pattern, is a design pattern that allows behavior to be added to an individual object dynamically. It provides a flexible alternative to subclassing for extending the functionality of an object without changing its core structure.
+
+In the context of the Decorator pattern, the analogy of a "Customizer" is fitting. Just as a customizer adds features or customizations to an existing object without altering its fundamental properties, the Decorator pattern allows additional responsibilities to be added to an object dynamically.
+
 ***
 
 ### facade
