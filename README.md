@@ -123,10 +123,7 @@ The Composite pattern is useful when you need to represent part-whole hierarchie
 An example scenario for using the Composite pattern could be building a hierarchical organization structure. Each component in the hierarchy, such as departments, teams, or employees, can be represented as a Composite object. The Composite object can contain other Composite objects or individual objects, allowing you to represent the entire organization structure as a tree-like composition.
 
 By using the Composite pattern, you can easily add, remove, or traverse components in the hierarchy, regardless of whether they are individual objects or substructures. This promotes flexibility, maintainability, and extensibility in handling complex part-whole relationships.
-
-
 ***
-
 ### decorator
 
 Decorator pattern, also known as the Wrapper pattern, is a design pattern that allows behavior to be added to an individual object dynamically. It provides a flexible alternative to subclassing for extending the functionality of an object without changing its core structure.
@@ -137,7 +134,7 @@ The key idea behind the Decorator pattern is to create a set of decorator classe
 
 By using the Decorator pattern, you can achieve a more flexible and modular design, as you can mix and match decorators to add specific features to objects as needed. This avoids the need for creating numerous subclasses to handle different combinations of features.
 
-
+An example in the context of a car could be a "CustomizedCar" class that acts as a decorator for a base "Car" object. The "CustomizedCar" class could add additional features such as a sunroof, alloy wheels, or a premium sound system without modifying the core functionality of the base "Car" class.
 ***
 
 ### facade
