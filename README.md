@@ -133,6 +133,8 @@ Decorator pattern, also known as the Wrapper pattern, is a design pattern that a
 
 In the context of the Decorator pattern, the analogy of a "Customizer" is fitting. Just as a customizer adds features or customizations to an existing object without altering its fundamental properties, the Decorator pattern allows additional responsibilities to be added to an object dynamically.
 
+The key idea behind the Decorator pattern is to create a set of decorator classes that wrap the original object and provide additional functionality. Each decorator implements the same interface as the original object, allowing them to be used interchangeably. Decorators can add new behavior before or after the execution of the original object's methods, effectively extending its functionality.
+
 ***
 
 ### facade
