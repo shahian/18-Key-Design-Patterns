@@ -135,6 +135,16 @@ The key idea behind the Decorator pattern is to create a set of decorator classe
 By using the Decorator pattern, you can achieve a more flexible and modular design, as you can mix and match decorators to add specific features to objects as needed. This avoids the need for creating numerous subclasses to handle different combinations of features.
 
 An example in the context of a car could be a "CustomizedCar" class that acts as a decorator for a base "Car" object. The "CustomizedCar" class could add additional features such as a sunroof, alloy wheels, or a premium sound system without modifying the core functionality of the base "Car" class.
+
+In this example, the Car interface represents the component interface, and the BasicCar class is the concrete component that implements this interface.
+
+The CarDecorator class is the decorator abstract class that implements the Car interface and maintains a reference to the decorated car object. It acts as a base class for concrete decorators.
+
+The SunroofDecorator and AlloyWheelsDecorator are concrete decorators that extend the CarDecorator class. They add specific features (sunroof and alloy wheels) by overriding the assemble method and invoking the same method on the decorated car object.
+
+In the Main class,  its demonstrate the usage of decorators by creating different combinations of decorated cars. The assemble method is called on each decorated car, and the output shows the added features along with the basic car.
+
+By using decorators, we can dynamically add features to a car object without altering its core structure. We can easily combine different decorators to customize cars with various combinations of features.
 ***
 
 ### facade
