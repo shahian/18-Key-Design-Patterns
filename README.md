@@ -151,6 +151,8 @@ By using decorators, we can dynamically add features to a car object without alt
 
 Facade is a structural design pattern that provides a simplified interface to a complex system, making it easier to use and understand. It acts as a "one-stop-shop" that encapsulates the interactions and complexities of multiple subsystems behind a unified interface.
 
+In the context of Java design patterns, a Facade is typically implemented as a separate class or module that serves as an entry point for client code. It hides the complexities of the underlying system and provides a simplified set of methods or operations that clients can use to interact with the system.
+
 
 ***
 
