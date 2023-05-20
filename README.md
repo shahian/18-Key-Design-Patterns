@@ -148,6 +148,10 @@ By using decorators, we can dynamically add features to a car object without alt
 ***
 
 ### facade
+
+Facade is a structural design pattern that provides a simplified interface to a complex system, making it easier to use and understand. It acts as a "one-stop-shop" that encapsulates the interactions and complexities of multiple subsystems behind a unified interface.
+
+
 ***
 
 ### flyweight
