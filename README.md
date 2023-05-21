@@ -168,6 +168,13 @@ The CarFacade class encapsulates the complexities of interacting with the subsys
 When the client code executes the startCar() method, it internally opens the fuel valve, starts the engine, ignites the ignition system, and displays a message indicating that the car has started. Similarly, when the stopCar() method is called, it stops the engine, extinguishes the ignition system, closes the fuel valve, and displays a message indicating that the car has stopped.
 
 The Car Facade pattern simplifies the interaction with complex subsystems and provides a convenient and unified interface for clients to control the car's operations.
+In this example of code that exist, we have a Car Facade (CarFacade) that provides a simplified interface for starting and stopping a car. Behind the scenes, the facade interacts with the subsystems: Engine (Engine), Fuel System (FuelSystem), and Ignition System (IgnitionSystem).
+
+The CarFacade class encapsulates the complexities of interacting with the subsystems. It provides methods startCar() and stopCar() that internally coordinate the actions required to start and stop the car. Clients can simply use the facade to control the car without needing to know the details of how each subsystem works.
+
+When the client code executes the startCar() method, it internally opens the fuel valve, starts the engine, ignites the ignition system, and displays a message indicating that the car has started. Similarly, when the stopCar() method is called, it stops the engine, extinguishes the ignition system, closes the fuel valve, and displays a message indicating that the car has stopped.
+
+The Car Facade pattern simplifies the interaction with complex subsystems and provides a convenient and unified interface for clients to control the car's operations.
 ***
 
 ### flyweight
