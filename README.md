@@ -178,6 +178,8 @@ The Car Facade pattern simplifies the interaction with complex subsystems and pr
 ***
 
 ### flyweight
+Flyweight is a design pattern in software engineering that aims to minimize the memory usage and improve performance of an application by sharing as much data as possible between multiple objects instead of allocating new memory for each object. The idea is to create small, reusable objects called "flyweights" that can be shared among multiple contexts, rather than creating new objects for each context. This helps reduce the overall memory footprint of the application and can lead to significant performance improvements. Flyweight is often used in situations where there are potentially large numbers of small objects that need to be created and managed, such as in graphical user interfaces or video games.
+
 ***
 
 ### proxy
