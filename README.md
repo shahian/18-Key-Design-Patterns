@@ -182,6 +182,7 @@ Flyweight is a design pattern in software engineering that aims to minimize the 
 
 The Flyweight design pattern, often referred to as the "Space Saver," is used to efficiently share and reuse small, granular objects in order to conserve memory and improve performance. The key idea behind the Flyweight pattern is to separate the intrinsic and extrinsic states of objects.
 
+The intrinsic state represents the shared, immutable data that can be shared among multiple objects. On the other hand, the extrinsic state represents the context-specific, variable data that is unique to each object. By separating these states, the Flyweight pattern allows multiple objects to share the intrinsic state, while storing the extrinsic state separately.
 
 
 ***
