@@ -184,6 +184,8 @@ The Flyweight design pattern, often referred to as the "Space Saver," is used to
 
 The intrinsic state represents the shared, immutable data that can be shared among multiple objects. On the other hand, the extrinsic state represents the context-specific, variable data that is unique to each object. By separating these states, the Flyweight pattern allows multiple objects to share the intrinsic state, while storing the extrinsic state separately.
 
+The Flyweight pattern focuses on optimizing the memory usage by reusing existing objects instead of creating new ones. This is achieved by introducing a Flyweight factory that manages a pool of shared flyweight objects. When a client requests a flyweight object, the factory either returns an existing object from the pool or creates a new one if it doesn't exist.
+
 
 ***
 
