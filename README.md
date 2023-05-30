@@ -196,6 +196,14 @@ By sharing small, reusable objects, the Flyweight pattern offers several benefit
 4- Flexible and lightweight design: The Flyweight pattern promotes a more flexible and lightweight design by separating the intrinsic and extrinsic states. Objects become simpler and can be easily shared and reused in different contexts.
 
 It's important to note that the Flyweight pattern is most effective when there are a large number of similar objects with shared characteristics. By identifying the commonalities and separating the intrinsic and extrinsic states, the Flyweight pattern can significantly optimize memory usage and improve the performance of the system.
+
+In this example, the Car interface represents the flyweight, which is implemented by the CarImpl concrete class. The CarFactory acts as the flyweight factory that manages the flyweight objects.
+
+The CarFactory maintains a cache (implemented as a Map) of existing car instances. When a client requests a car, the factory checks if the car with the specified brand exists in the cache. If it does, the existing car is returned. Otherwise, a new car object is created, added to the cache, and returned to the client.
+
+In the client code, we obtain car objects from the factory and call the drive method to simulate driving to different locations. Note that even though multiple cars with the same brand are requested, the flyweight factory ensures that only one instance of each unique brand is created and shared among the clients.
+
+The Flyweight pattern in this example helps save memory by reusing car objects with the same brand. It eliminates the need to create multiple car instances for each brand, resulting in reduced memory usage and improved performance.
 ***
 
 ### proxy
