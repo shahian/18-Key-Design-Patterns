@@ -207,6 +207,7 @@ The Flyweight pattern in this example helps save memory by reusing car objects w
 ***
 
 ### proxy
+the Proxy design pattern is based on the concept of a stand-in actor, also known as a proxy, representing another object and controlling access or actions to it.
 ***
 
 ### chain
