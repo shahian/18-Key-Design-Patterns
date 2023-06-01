@@ -208,6 +208,8 @@ The Flyweight pattern in this example helps save memory by reusing car objects w
 
 ### proxy
 the Proxy design pattern is based on the concept of a stand-in actor, also known as a proxy, representing another object and controlling access or actions to it.
+
+In the Proxy pattern, the proxy object acts as an intermediary between the client code and the real subject (the object being proxied). The proxy can perform additional tasks such as caching, lazy loading, or validation before forwarding requests to the real subject. The proxy can also restrict access to certain methods or properties of the real subject.
 ***
 
 ### chain
