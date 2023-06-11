@@ -212,6 +212,10 @@ the Proxy design pattern is based on the concept of a stand-in actor, also known
 In the Proxy pattern, the proxy object acts as an intermediary between the client code and the real subject (the object being proxied). The proxy can perform additional tasks such as caching, lazy loading, or validation before forwarding requests to the real subject. The proxy can also restrict access to certain methods or properties of the real subject.
 
 The main advantage of using the Proxy pattern is that it allows for more flexible and secure communication between objects. It can improve performance by deferring expensive operations until they are actually needed, and it can simplify the interface of complex objects by providing a simpler API through the proxy.
+
+The Proxy pattern provides a surrogate or placeholder for another object, allowing the proxy object to control access to the original object or add additional functionality. It acts as a stand-in actor for the real object, providing a level of indirection and control.
+
+The Proxy pattern is useful in scenarios where we want to control access to an object, add additional behavior before or after certain operations, or provide a simplified interface to a complex object. It can be used to implement various functionalities such as caching, logging, access control, remote communication, and more.
 ***
 
 ### chain
