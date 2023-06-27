@@ -222,6 +222,7 @@ The Proxy pattern is useful in scenarios where we want to control access to an o
 
 Chain of Responsibility is a behavioral design pattern that allows an object to pass a request along a chain of potential handlers until the request is handled by one of the objects in the chain. Each object in the chain has the ability to handle the request or pass it to the next object in the chain.
 
+The Chain of Responsibility pattern is useful in scenarios where there are multiple objects that can handle a request, and the specific handler is not known in advance. It promotes loose coupling between the sender of the request and the receiver, as the sender does not need to know the exact handler or have direct dependencies on it.
 
 ***
 
