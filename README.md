@@ -224,6 +224,7 @@ Chain of Responsibility is a behavioral design pattern that allows an object to 
 
 The Chain of Responsibility pattern is useful in scenarios where there are multiple objects that can handle a request, and the specific handler is not known in advance. It promotes loose coupling between the sender of the request and the receiver, as the sender does not need to know the exact handler or have direct dependencies on it.
 
+In the context of a car example, let's consider a scenario where a car manufacturing company receives customer requests for different car customization options. The options can include adding a sunroof, installing a navigation system, or upgrading the audio system. Each customization option can be handled by a specific department within the company.
 ***
 
 ### command
